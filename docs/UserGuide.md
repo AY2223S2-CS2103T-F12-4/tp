@@ -132,6 +132,18 @@ Format: `delete INDEX`
 Examples:
 * `list` followed by `delete 2` deletes the 2nd opening in the opening list.
 
+### List upcoming dates : `upcoming`
+
+Lists openings which has events in the next N days.  
+
+Format: `upcoming N`
+
+* Lists all openings which has events in the next N days.
+* N **must be a positive integer** 1, 2, 3, …​
+
+Examples:
+* `upcoming 1` lists all openings with events happening in the next 1 day. 
+
 ### Exiting the program : `exit`
 
 Exits the program.
@@ -162,4 +174,5 @@ Action | Format, Examples
 **Edit** | `edit INDEX [p/POSITION] [c/COMPANY] [e/EMAIL] [s/STATUS] [d/KEYDATE]…​` <br> e.g., `edit 1 c/Goggle e/johndoe@example.com`
 **Delete** | `delete INDEX`<br> e.g., `delete 3`
 **Status** | `status s/STATUS`<br> e.g., `status s/interviewing`
+**Upcoming** | `upcoming N`<br> e.g., `upcoming 1`
 **List** | `list`
